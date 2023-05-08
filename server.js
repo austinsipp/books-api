@@ -5,6 +5,9 @@ const PORT = process.env.PORT
 const app= express()
 const methodOverride = require('method-override')
 const mongoose = require('mongoose')
+const cors = require('cors')
+
+app.use(cors())
 
 
 app.set('view engine', 'jsx')
